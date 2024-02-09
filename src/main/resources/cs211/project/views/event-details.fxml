@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="600.0" prefWidth="800.0" styleClass="web-view" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventDetailsController">
+   <children>
+      <Pane prefHeight="122.0" prefWidth="800.0" styleClass="progress-bar">
+         <children>
+            <Label fx:id="headLabel" layoutX="369.0" layoutY="78.0" styleClass="text-field" text="EVENT DETAILS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="75.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBackClick" styleClass="default-button" text="Back" />
+      <HBox fx:id="hBox" layoutX="123.0" layoutY="144.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="173.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <Label layoutX="527.0" layoutY="161.0" styleClass="text-field" text="Name: " />
+      <Label fx:id="nameLabel" layoutX="578.0" layoutY="161.0" styleClass="text-field" text="nameLabel" />
+      <Label layoutX="527.0" layoutY="253.0" styleClass="text-field" text="Ticket:" />
+      <Label fx:id="ticketLabel" layoutX="578.0" layoutY="253.0" styleClass="text-field" text="ticketPriceLabel" />
+      <Label layoutX="532.0" layoutY="191.0" styleClass="text-field" text="Date: " />
+      <Label layoutX="532.0" layoutY="221.0" styleClass="text-field" text="Time: " />
+      <Label fx:id="dateLabel" layoutX="578.0" layoutY="191.0" styleClass="text-field" text="dateLabel" />
+      <Label fx:id="timeLabel" layoutX="578.0" layoutY="222.0" styleClass="text-field" text="timeStartLabel" />
+      <Label layoutX="467.0" layoutY="283.0" styleClass="text-field" text="Book Ticket Date: " />
+      <Label fx:id="bookDateLabel" layoutX="578.0" layoutY="283.0" styleClass="text-field" text="bookDateLabel" />
+      <ScrollPane fx:id="descriptionScroll" layoutX="50.0" layoutY="360.0" prefHeight="200.0" prefWidth="700.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="677.0">
+               <children>
+                  <Label fx:id="descriptionLabel" layoutX="5.0" layoutY="5.0" styleClass="text-field" text="descriptionLabel" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="62.0" layoutY="340.0" styleClass="text-field" text="Description:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#OnMenuBarClick" styleClass="default-button" text="Menu" textFill="WHITE" translateX="14.0" translateY="18.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="bPane" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <AnchorPane fx:id="slide" prefHeight="200.0" prefWidth="200.0" styleClass="tab-pane" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="200.0">
+                     <children>
+                        <Label />
+                        <Label />
+                        <Label />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onAction="#onHomeClick" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onProfileClick" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Profile Setting" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onCreateEvent" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Create Event" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onJoinHistory" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="History" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onEventHis" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="My Event" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onPartiSchedule" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Participant Schedule" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onTeamSchedule" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Team Schedule" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onComment" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Comment" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label />
+                        <Label />
+                        <Button mnemonicParsing="false" onAction="#onLogOutButton" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Log out" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeMenuBar" styleClass="menu-button" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

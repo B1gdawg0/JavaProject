@@ -1,0 +1,116 @@
+.search-box{
+    -fx-background-radius: 100;
+}
+.search-box-default{
+    -fx-background-radius: 20;
+}
+.default-button{
+    -fx-background-color: #6d86bf;
+    -fx-background-radius: 20;
+    -fx-text-fill: "WHITE";
+    -fx-font-weight: bold;
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 13;
+}
+
+.default-button:hover
+{
+    -fx-background-color: #acbee7;
+}
+
+.text-area
+{
+    -fx-background-color: #1ac900;
+    -fx-text-fill: #ffffff;
+}
+
+.default-button:pressed
+{
+    -fx-background-color: #6d86bf;
+}
+
+.menu-button
+{
+    -fx-background-color: transparent;
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 13;
+}
+.menu-button:hover
+{
+    -fx-background-color: #BBCBF5;
+}
+.menu-button:pressed
+{
+    -fx-background-color: transparent;
+}
+.tab-pane
+{
+    -fx-background-color: #909DBD;
+}
+
+.progress-bar
+{
+    -fx-background-color: #bbc9ea;
+}
+
+.label, .hyperlink, .text-field, .list-view, .combo-box, .table-view, .text-flow{
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 13;
+}
+
+#invalidLabel, #errorLabel, #errorLabel1, #errorLabelApplyToParticipants, #errorLabelBook{
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 12;
+}
+#headLabel{
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+.table-view .column-header, .table-view .scroll-bar{
+    -fx-background-color: #909DBD;
+}
+
+.date-picker{
+    -fx-background-radius: 20;
+}
+
+.date-picker .text-field {
+    -fx-background-radius: 20;
+}
+#vBox,#vBox1,#vBox2,#vBox3,#itemPane{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+#parent1{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+    -fx-background-color: #909DBD;
+}
+#headLabel4,#headLabel1,#headLabel2,#headLabel3{
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 0, 0, 1, 1);
+}
+.combo-box{
+    -fx-background-radius: 20;
+    -fx-background-color: #c2cdea;
+}
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+
+.text-area{
+    -fx-font-family: "Gurmukhi Sangam MN";
+    -fx-font-size: 13;
+    -fx-text-fill: #000000;
+    -fx-focus-traversable: true;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+.text-area:focused {
+    -fx-border-color: transparent;
+}

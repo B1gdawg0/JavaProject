@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="600.0" prefWidth="800.0" styleClass="web-view" stylesheets="@dark-theme.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EditEventController">
+   <children>
+      <Button layoutX="77.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="26.0" prefWidth="48.0" styleClass="default-button" text="Back" />
+      <Label layoutX="144.0" layoutY="242.0" styleClass="text-field" text="Event Name: " />
+      <Label layoutX="155.0" layoutY="276.0" styleClass="text-field" text="Start Date:" />
+      <TextField fx:id="eventNameTextField" layoutX="225.0" layoutY="238.0" prefWidth="123.0" styleClass="search-box" />
+      <Label layoutX="125.0" layoutY="380.0" styleClass="text-field" text="Time Event Start:" />
+      <TextField fx:id="timeStartEventTextField" layoutX="230.0" layoutY="376.0" prefHeight="26.0" prefWidth="70.0" styleClass="search-box" />
+      <Label layoutX="413.0" layoutY="380.0" styleClass="text-field" text="Time Event End:" />
+      <TextField fx:id="timeEndEventTextField" layoutX="511.0" layoutY="376.0" prefHeight="26.0" prefWidth="70.0" styleClass="search-box" />
+      <Label layoutX="409.0" layoutY="242.0" styleClass="text-field" text="Tickets Amount:" />
+      <TextField fx:id="amountTicketTextField" layoutX="509.0" layoutY="238.0" prefHeight="26.0" prefWidth="70.0" styleClass="search-box" />
+      <Label layoutX="165.0" layoutY="411.0" styleClass="text-field" text="Detail:" />
+      <DatePicker fx:id="eventDatePickerStart" layoutX="225.0" layoutY="272.0" prefHeight="26.0" prefWidth="123.0" styleClass="date-picker" />
+      <Label layoutX="447.0" layoutY="277.0" styleClass="text-field" text="End Date:" />
+      <DatePicker fx:id="eventDatePickerEnd" layoutX="509.0" layoutY="272.0" prefHeight="26.0" prefWidth="123.0" styleClass="date-picker" />
+      <Button layoutX="673.0" layoutY="526.0" mnemonicParsing="false" onAction="#onFinishClick" styleClass="default-button" text="Finish" />
+      <Label layoutX="94.0" layoutY="310.0" styleClass="text-field" text="Join Event Start Date:" />
+      <DatePicker fx:id="startJoinDate" layoutX="225.0" layoutY="306.0" prefHeight="26.0" prefWidth="123.0" />
+      <Label layoutX="386.0" layoutY="310.0" styleClass="text-field" text="Join Event End Date:" />
+      <DatePicker fx:id="endJoinDate" layoutX="510.0" layoutY="306.0" prefHeight="26.0" prefWidth="123.0" />
+      <Label fx:id="headLabel" layoutX="364.0" layoutY="52.0" styleClass="text-field" text="Edit Event">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <HBox fx:id="hBox" layoutX="239.0" layoutY="84.0" prefHeight="131.0" prefWidth="321.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onImageView" style="-fx-background-color: transparent;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imageView" fitHeight="129.0" fitWidth="304.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#OnMenuBarClick" styleClass="default-button" text="Menu" textFill="WHITE" translateX="14.0" translateY="18.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="94.0" layoutY="344.0" text="Join Team Start Date:" />
+      <Label layoutX="386.0" layoutY="343.0" text="Join Team End Date:" />
+      <DatePicker fx:id="teamStart" layoutX="226.0" layoutY="341.0" prefHeight="24.0" prefWidth="123.0" />
+      <DatePicker fx:id="teamEnd" layoutX="511.0" layoutY="339.0" prefHeight="24.0" prefWidth="123.0" />
+      <TextArea fx:id="detailTextArea" layoutX="210.0" layoutY="411.0" prefHeight="150.0" prefWidth="403.0" />
+      <BorderPane fx:id="bPane" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <AnchorPane fx:id="slide" prefHeight="200.0" prefWidth="200.0" styleClass="tab-pane" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="200.0">
+                     <children>
+                        <Label />
+                        <Label />
+                        <Label />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onAction="#onHomeClick" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onProfileClick" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Profile Setting" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onCreateEvent" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Create Event" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onJoinHistory" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="History" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onEventHis" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="My Event" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onPartiSchedule" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Participant Schedule" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onTeamSchedule" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Team Schedule" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onComment" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Comment" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label />
+                        <Label />
+                        <Button mnemonicParsing="false" onAction="#onLogOutButton" prefHeight="49.0" prefWidth="200.0" styleClass="menu-button" text="Log out" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeMenuBar" styleClass="menu-button" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

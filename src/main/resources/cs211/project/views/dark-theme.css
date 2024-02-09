@@ -1,0 +1,271 @@
+.search-box {
+    -fx-background-radius: 100;
+    -fx-text-fill: white;
+    -fx-background-color: #383A40;
+}
+
+.search-box-default{
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-background-color: #383A40;
+}
+
+.default-button {
+    -fx-background-color: #2B2D31;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Tiro Devanagari Hindi";
+}
+.label, .hyperlink, .text-field, .list-view, .combo-box, .table-view, .text-flow{
+    -fx-font-family: "Tiro Devanagari Hindi";
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+}
+#invalidLabel, #errorLabel, #errorLabel1, #errorLabelApplyToParticipants, #errorLabelBook{
+    -fx-font-family: "Tiro Devanagari Hindi";
+    -fx-font-size: 11;
+}
+#headLabel,#headLabel1,#headLabel2,#headLabel3,#headLabel4{
+    -fx-font-family: "Tiro Devanagari Hindi";
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.default-button:hover {
+    -fx-background-color: #404249;
+}
+
+.default-button:pressed {
+    -fx-background-color: rgba(36, 38, 41, 0.52);
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-font-family: "Tiro Devanagari Hindi";
+    -fx-font-size: 14;
+}
+
+.menu-button:hover {
+    -fx-background-color: #404249;
+}
+
+.menu-button:pressed {
+    -fx-background-color: transparent;
+}
+
+.progress-bar
+{
+    -fx-background-color: #1E1F22;
+}
+
+.web-view
+{
+    -fx-background-color: #313338;
+}
+
+.text-field
+{
+    -fx-text-fill: #ffffff;
+}
+.Label
+{
+    -fx-text-fill: #ffffff;
+}
+.list-view {
+    -fx-background-color: #36393f;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: rgba(54, 57, 63, 0.49);
+    -fx-text-fill: white;
+}
+
+
+.list-view .list-cell:odd {
+    -fx-background-color: #36393f;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #404249;
+    -fx-text-fill: white;
+}
+
+.scroll-bar
+{
+    -fx-background-color: #2B2D31;
+}
+
+.text-field-error
+{
+    -fx-text-fill: #ffd900;
+}
+
+.text-area
+{
+    -fx-background-color: #2B2D31;
+    -fx-text-fill: #ffffff;
+}
+
+.date-picker .text-field {
+    -fx-text-fill: #2B2D31;
+}
+
+.combo-box .text {
+    -fx-text-fill: white;
+}
+
+.combo-box {
+    -fx-background-color: #383A40;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #2B2D31;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:selected {
+    -fx-background-color: #404249;
+}
+
+.table-view
+{
+    -fx-background-color: #383A40;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #383A40;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .table-view .table-row-cell {
+    -fx-background-color: #383A40;
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: #404249;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #404249;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #404249;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-view .table-row:selected {
+    -fx-background-color: #4c4e54;
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell:selected {
+    -fx-background-color: #4c4e54;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #4c4e54;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:filled:selected .table-cell {
+    -fx-background-color: #4c4e54;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:filled:selected:focused {
+    -fx-background-color: #4c4e54;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell .table-cell {
+    -fx-text-fill: white;
+}
+
+
+.scroll-pane {
+    -fx-background-color: #383A40;
+    -fx-border-color: #383A40;
+    -fx-text-fill: white;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: #383b41;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+}
+.scroll-bar:horizontal .track {
+    -fx-background-color: #383b41;
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: white;
+}
+.scroll-pane .viewport {
+    -fx-background-color: #383A40;
+    -fx-text-fill: white;
+}
+
+.text-flow {
+    -fx-fill: white;
+}
+
+.date-picker .popup {
+    -fx-background-color: #383A40;
+}
+
+.date-picker .calendar-date-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #383A40;
+    -fx-background-radius: 20;
+}
+
+.date-picker .text-field {
+    -fx-text-fill: white;
+    -fx-background-color: #383A40;
+
+    -fx-background-radius: 20;
+}
+
+.date-picker {
+    -fx-background-color: #383A40;
+    -fx-background-radius: 20;
+}
+#vBox,#vBox1,#vBox2,#vBox3{
+    -fx-background-color: #4c4e54;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+#slide{
+    -fx-background-color: #2B2D31;
+}
+#itemPane{
+    -fx-background-color: #2B2D31;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+.text-area{
+    -fx-font-family: "Tiro Devanagari Hindi";
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-focus-traversable: true;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+.text-area .content{
+    -fx-background-color: #383A40;
+}
+.text-area:focused {
+    -fx-border-color: transparent;
+}
